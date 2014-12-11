@@ -1,0 +1,54 @@
+<ion-view title="Registrierung">
+	<ion-nav-buttons side="left">
+		<button menu-toggle="left"class="button button-icon icon ion-navicon"></button>
+	</ion-nav-buttons>
+  
+  <ion-content>
+  <div class="padding">
+	  <p>
+		<br/> Um einen Account zu erstellen musst du das folgende Formular ausfuellen.
+		<br/> Alle Felder muessen ausgefuellt werden.
+	  </p>
+  </div>
+  
+  <div>
+	  <form ng-submit="doRegister()">
+		  <div class="padding">
+			  <div class="list">
+				  <label class="item item-input item-floating-label">
+					<input type="text" placeholder="Email" ng-model="registerData.email">
+				  </label>
+				  <label class="item item-input item-floating-label">
+					<input type="text" placeholder="Benutzername" ng-model="registerData.username">
+				  </label>
+				  <label class="item item-input item-floating-label">
+					<input type="password" placeholder="Passwort" ng-model="registerData.password">
+				  </label>
+				  <label class="item item-input item-floating-label">
+					<input type="password" placeholder="Passwort wiederholen" ng-model="registerData.password2">
+				  </label>
+			  </div>
+				<!-- <button id="bAnmelden" type="submit">Registrieren</button> -->
+				<button class="button button-stable" style="float: left; width: 49%" type="submit"> Registrieren </button>
+				<button class="button button-stable" style="float: right; width: 49%" type="reset" > Zuruecksetzen </button>
+		  </div>
+		  
+	  </form>
+  </div>
+  
+  
+
+		
+		<!--
+		-- Zur Laufzeit
+		- Kontrollieren ob Benutzername verfügbar ist
+		- Kontrollieren ob beide Passwörter gleich sind
+		
+		-- Nachdem
+		- Senden einer Email
+		- Speicherung in die Datenbank
+		-->
+		
+	
+  </ion-content>
+</ion-view>
