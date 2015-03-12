@@ -11,25 +11,47 @@
     <header class="bar bar-header bar-stable">
       <h1 class="title">Navigation</h1>
     </header>
+	
     <ion-content class="has-header">
       <ion-list>
-        <!--<ion-item nav-clear menu-close ng-click="login()">
-          Login
-        </ion-item>
-		-->
         <ion-item nav-clear menu-close href="#/app/login">
           Anmelden
         </ion-item>
         <ion-item nav-clear menu-close href="#/app/register">
           Registrierung
         </ion-item>
-        <ion-item nav-clear menu-close href="#/app/gruppe">
-          Gruppen
-        </ion-item>
+        <ion-item nav-clear menu-close href="#/app/gruppe">Gruppen</ion-item>
 		<ion-item nav-clear menu-close href="#/app/logout">
           Abmelden
         </ion-item>
-      </ion-list>
     </ion-content>
+	
   </ion-side-menu>
+
+
+    <ion-side-menu side="right">
+        <header class="bar bar-header bar-stable">
+            <h1 class="title">Navigation</h1>
+        </header>
+
+        <ion-content class="has-header">
+            <ion-list>
+                <ion-item nav-clear menu-close href="#/app/login">
+                    Profil
+                </ion-item>
+                <ion-item nav-clear menu-close href="#/app/register">
+                    Rangliste
+                </ion-item>
+                <ion-item href="#/app/groupspec">5AHITM</ion-item>
+                <ion-item class="b1" style="text-indent: 10%" href="#/app/groupspec">nächsten Spiele</ion-item>
+                <ion-item class="b1" style="text-indent: 10%" href="#/app/logout">Ergebnisse</ion-item>
+                <ion-item class="b1" style="text-indent: 10%" href="#/app/logout">Mitglieder</ion-item>
+                <ion-item nav-clear menu-close href="#/app/logout">
+                    Abmelden
+                </ion-item>
+            </ion-list>
+        </ion-content>
+
+    </ion-side-menu>
 </ion-side-menus>
+

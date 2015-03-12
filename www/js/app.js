@@ -64,7 +64,24 @@ angular.module('starter', ['ionic', 'starter.controllers'])
           templateUrl: "templates/login.html"
         }
       }
-    });
+    })
+	
+	.state('app.groupspec', {
+      url: "/groupspec",
+      views: {
+        'menuContent' :{
+          templateUrl: "templates/groupspec.html"
+        }
+      }
+    })
+      .state('app.creategruppe', {
+          url: "/creategruppe",
+          views: {
+              'menuContent' :{
+                  templateUrl: "templates/creatgruppe.html"
+              }
+          }
+      });
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/app/login');
 });
